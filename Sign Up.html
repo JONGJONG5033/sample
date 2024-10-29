@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+                body{
+        font-family: 'Times new roman', sans-serif;
+        margin: 0; 
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        position: relative;
+        }
+        body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(https://wallpapers.com/images/high/the-ultimate-definition-of-fitness-uko3bxwy9sverxx5.webp);
+        background-size: cover;
+        z-index: -1;
+        height: 100%;
+        }       
+        .login {
+        padding: 30px;
+        border: 1px solid black;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+        label {
+        display: block;
+        margin-bottom: 8px;
+        }
+        input {
+        width: 100%;
+        padding: 9px;
+        margin-bottom: 19px;
+        box-sizing: border-box;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        }
+       .input, input::placeholder {
+        color: black;
+        }
+        button {
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+        *{
+        margin: 0;
+        padding: 10;
+        box-sizing: border-box;
+        }
+        ul{
+        position: absolute;
+       left: 400px;
+        }
+      .logo a{
+       font-size: 30px;
+        text-decoration: none;
+      }
+     .text{
+        color: WHITE;
+      margin: 10px 15px;
+      }
+      .text:hover{
+  color:#000
+}
+        nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    transition: 0.5s;
+  }
+.logo1{
+      position: absolute;
+      top: px;
+      width: 70px;
+      cursor: pointer;
+      }
+      .login{
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 18px;
+      background-color: transparent;
+      color: rgb(0, 0, 0);
+      }
+      .input, input[placeholder]{
+        text-align: center;
+        background-color: transparent;
+        box-shadow: inset 0 0 0 2px black;
+      }
+      .buttons{
+      position: absolute;
+      right: 10px;
+      }
+      .btn{
+      background: transparent;
+      border: 3px solid;
+      border-radius: 15px;
+      padding: 9px 25px;
+      text-decoration: none;
+      font-size: 18px;
+      color:white;
+      }
+      .btn:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        }
+        button {
+      background: transparent;
+      border: 3px solid;
+      border-radius: 15px;
+      border-color: black;
+      padding: 7px 25px;
+      text-decoration: none;
+      font-size: 15px;
+      color:white;
+        }
+        button:hover {
+        background-color: white;
+        color: black;
+        }
+        .navbar {
+  margin-bottom: 100px;
+  padding-top: 35px;
+  padding-left: 130px;
+}
+
+ul {
+  position: absolute;
+  left: 400px;
+}
+
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo1 {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.logo1:hover {
+  background-image: url('ShapeLift\ Logo\ Hover.png');
+  cursor: pointer;
+}
+
+.logo1{
+  position: absolute;
+  width: 100px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="navbar">
+      <img src="ShapeLift Logo Hover.png" class="logo1">
+<nav style="font-size:150%;"> 
+<br>
+<div class="buttons">
+  <a href="Log in.html" class="btn">LOG IN</a>
+</div></div></div>
+    </nav><br><br>
+    <div class="login">
+  <form>
+    <table>
+      <h1> <center>Sign Up</center>
+        <tr>
+          <td>
+            <input type="text" placeholder="Email" id="email">
+          </td>
+        <tr>
+          <td>
+            <input type="password" placeholder="Password" id="password">    
+          </td>
+          <tr>
+          <td>
+            <input type="password" placeholder="Confirm Password" id="confirmPassword">      
+          </td>
+        </form>
+        <tr>
+          <td>
+            <center>
+                <div class="confirm"><button type="button" onclick="validateForm()">Confirm</button></div>
+          </td>
+        </tr>
+    </table>
+  </form>
+</div>
+<script>
+    function validateForm() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+
+
+        if (email === "BSIT@gmail.com" && password === "BSIT" && password === confirmPassword) {
+            // Redirect to HomeTab.html
+            window.location.href = "HomeTab.html";
+        } else {
+            alert("Wrong email or password. Try Email:BSIT@gmail.com and Password:BSIT Cofirm Password:BSIT");
+            return false; // Prevent form submission
+        }
+    }
+</script>
+</body>
+</html>

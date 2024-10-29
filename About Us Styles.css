@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://wallpapers.com/images/high/solid-background-deep-blue-gradient-mbcndgga1jycauaa.webp); 
+    background-size: cover; 
+    background-position: center; 
+}
+        
+.navbar {
+    margin-bottom: 100px;
+    padding-top: 35px;
+    padding-left: 130px;
+  }
+  
+  ul {
+    position: absolute;
+    left: 400px;
+  }
+  
+  nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo a{
+    font-size: 40px;
+    text-decoration: none;
+  }
+  
+  .text{
+    color: white;
+  }
+  
+  .text:hover{
+    color:#000
+  }
+  
+  .logo1 {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    background-size: cover;
+    transition: background-image 0.3s ease;
+  }
+  
+  .logo1:hover {
+    background-image: url('ShapeLift\ Logo\ Hover.png');
+    cursor: pointer;
+  }
+  
+  .logo, .logo1{
+    position: absolute;
+    width: 100px;
+    cursor: pointer;
+  }
+.logo {
+        font-size: 50px;
+        text-decoration: none;
+        transform: translateY(30%) translateX(-10rem);
+      }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #122A3C;
+    padding: 5px;
+}
+
+.footer-text {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding-left: 50px;
+    text-align: left; 
+}
+
+.footer-words {
+    color: white;
+    font-size: 15px;
+    margin: 1;
+    padding-left: 55px; 
+     text-align: left;
+}
+
+.footer-words:nth-child(2) {
+   padding-left: 80px;
+     text-align: left;
+}
+.footer-words:nth-child(3) {
+    padding-left: 65px;
+     text-align: left;
+}
+
+.talk-to-us {
+    text-align: center;
+    color: #000;
+    margin-top: 5px;
+   font-size: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    margin: 20px;
+}
+
+.contact-item img {
+    width: 300px;
+    height: 320px;
+   border: 5px solid;
+}
+
+.contact-item p {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-item a img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 100px;
+  margin-right: 250px;
+   border-radius: 50%;
+    border: 5px solid #000;
+
+}
+
+.footer-words a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

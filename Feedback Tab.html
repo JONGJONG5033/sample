@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In</title>
+  <link rel="stylesheet" href="Feedback tab styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Feedback:</h1>
+    <input type="text" placeholder="Email:" id="emailInput">
+    <input type="text" placeholder="Your Feedback:" id="feedbackInput">
+    <center>
+    <button type="button" onclick="sendFeedback()">Send</button>
+  </div>
+  <footer>
+    <p class="footer-text">Quick Links</p>
+    <p class="footer-words"><a href="HomeTab.html">Home</a></p>
+    <p class="footer-words"><a href="Usertab.html">User Profile</a></p>
+    <p class="footer-words"><a href="Feedback Tab.html">Send Feedback</a></p>
+</footer>
+
+  <script>
+    function sendFeedback() {
+      var email = document.getElementById("emailInput").value;
+      var feedback = document.getElementById("feedbackInput").value;
+
+      // Check if email is correct and feedback contains letters or characters
+      if (email === "BSIT@gmail.com") {
+        if (feedback.trim().length > 0) {
+          // Proceed to another link after clicking "send" button
+          window.location.href = "Thank you for message tab.html";
+        } else {
+          // Alert if feedback contains no letters or characters
+          alert("Please leave us with your message");
+        }
+      } else {
+        // Alert if the email is wrong
+        alert("Wrong email");
+      }
+    }
+  </script>
+</body>
+</html>

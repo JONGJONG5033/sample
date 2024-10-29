@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Out</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  font-family: times new roman, sans-serif;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image:url(https://wallpapers.com/images/high/solid-background-deep-blue-gradient-mbcndgga1jycauaa.webp);
+  background-size: cover;
+}
+.container {
+  background-color: #122A3C;
+  padding: 100px;
+  border: 5px solid black;
+  border-radius: 50px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="address"] {
+  width: 100%;
+  padding: 10px;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.input, input[placeholder]{
+  color: black;
+  box-shadow: inset 0 0 0 3px black;
+  border-radius: 10px;
+}
+.input, input::placeholder {
+  color: black;
+}
+button {
+  background-color: #1C3C54; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 150px;
+  box-shadow: inset 0 0 0 2px black;
+}
+
+button:hover {
+  background-color: gray; 
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #122A3C;
+    padding: 5px;
+}
+
+.footer-text {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding-left: 20px;
+    text-align: left; 
+}
+
+.footer-words {
+    color: white;
+    font-size: 15px;
+    margin: 1;
+    padding-left: 26px; 
+}
+
+.footer-words:nth-child(2) {
+   padding-left: 50px;
+}
+.footer-words:nth-child(3) {
+    padding-left: 35px;
+}
+.footer-words a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>PLEASE FILL UP THE FORM</h1>
+        <input type="text" placeholder="ADDRESS" id="addressInput">
+        <center>
+        <button type="button" onclick="confirmAddress()">CONFIRM</button>
+    </div>
+    <footer>
+      <p class="footer-text">Quick Links</p>
+      <p class="footer-words"><a href="HomeTab.html">Home</a></p>
+      <p class="footer-words"><a href="Usertab.html">User Profile</a></p>
+      <p class="footer-words"><a href="Feedback Tab.html">Send Feedback</a></p>
+    </footer>
+  
+    <script>
+      function confirmAddress() {
+        var address = document.getElementById("addressInput").value;
+  
+        // Check if address is correct
+        if (address === "Holy Cross of Davao College") {
+          // Proceed to another link after clicking "CONFIRM" button
+          window.location.href = "Thank You tab.html";
+        } else {
+          // Alert if the address is wrong
+          alert("Wrong address. Please put Holy Cross of Davao College");
+        }
+      }
+    </script>
+</html>
